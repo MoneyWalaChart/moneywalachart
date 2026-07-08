@@ -1,0 +1,132 @@
+/* =====================================================
+   MoneyWalaChart - Legal Pages & Footer Styles
+   Use on:
+   - privacy.html
+   - terms.html
+   - disclaimer.html
+   - 404.html
+   ===================================================== */
+
+/* ---------- Legal Card ---------- */
+
+.legal-card,
+.error-card{
+    background:#171a21;
+    border:1px solid #2a2f3a;
+    border-radius:18px;
+    padding:40px;
+    transition:none;
+    transform:none;
+    box-shadow:none;
+}
+
+.error-card{
+    border-color:#d4af37;
+}
+
+.legal-card:hover,
+.error-card:hover{
+    transform:none;
+    box-shadow:none;
+    border-color:inherit;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    background:#111;
+    color:#ddd;
+    padding:60px 20px 25px;
+    margin-top:100px;
+    border-top:1px solid #2a2a2a;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.footer-brand{
+    flex:1;
+    min-width:260px;
+}
+
+.footer-logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:32px;
+    font-weight:700;
+}
+
+.footer-logo span{
+    color:#FFD54A;
+}
+
+.footer-brand p{
+    color:#aaa;
+    line-height:1.8;
+    margin-top:15px;
+}
+
+.footer-links{
+    display:flex;
+    gap:60px;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-column h4{
+    color:#fff;
+    margin-bottom:18px;
+}
+
+.footer-column a{
+    color:#bbb;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:color .25s ease;
+}
+
+.footer-column a:hover{
+    color:#FFD54A;
+}
+
+.footer-bottom{
+    max-width:1200px;
+    margin:45px auto 0;
+    padding-top:25px;
+    border-top:1px solid #2a2a2a;
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:#888;
+    line-height:1.8;
+    margin:10px 0;
+}
+
+@media (max-width:768px){
+
+.footer-container{
+    flex-direction:column;
+    gap:40px;
+}
+
+.footer-links{
+    flex-direction:column;
+    gap:30px;
+}
+
+.legal-card,
+.error-card{
+    padding:28px;
+}
+
+}
